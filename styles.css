@@ -3,3 +3,138 @@
   padding: 0;
   background-origin: padding-box;
 }
+
+.wrapper {
+  width: 100%;
+  padding: 2rem;
+}
+
+header {
+  background: url(./new-york-city-wallpaper-l.jpg);
+  height: 400px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: white;
+  margin: 1rem;
+}
+
+.button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(243, 237, 237, 0.5);
+  scale: 1.06;
+}
+
+.button:active {
+  background-color: rgb(32, 32, 31);
+  scale: 1;
+}
+/* ----------------------------main--------------- */
+
+.wrapper-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+.left-box {
+  position: relative; /* REQUIRED */
+  width: auto;
+  height: auto;
+}
+
+.building {
+  height: 600px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-box {
+  width: 300px;
+  height: 600px;
+  margin-left: 2rem;
+  color: rgb(105, 99, 99);
+}
+
+.text-about {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.text-title {
+  color: black;
+}
+
+.text-p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+ul {
+  padding-left: 20px;
+}
+
+ul li::marker {
+  color: green;
+  font-size: 1, 5rem;
+}
+
+.button-down {
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: block;
+  margin: 1rem auto 0; /* top margin 1rem, auto left/right, no bottom margin */
+}
+
+.button-down:hover {
+  background-color: rgba(243, 237, 237, 0.5);
+  scale: 1.06;
+}
+
+.button-down:active {
+  background-color: rgb(32, 32, 31);
+  scale: 1;
+}
+
+.white-box {
+  position: absolute;
+  top: 50%; /* vertical center */
+  left: 50%; /* horizontal center */
+  transform: translate(-50%, -50%); /*  adjust center precisely */
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100px; /* optional, makes size controlled */
+}
